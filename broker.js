@@ -14,11 +14,7 @@ client.on("error", (err) => {
 client.on("connect", function () {
 	console.log("connected to self, logging 'fingers'");
 	client.subscribe("fingers");
-	// setInterval(() => client.publish("fingers", "a"), 1000);
 });
 client.on("message", function (topic, message) {
 	console.log({ topic, message: JSON.parse(message.toString()) });
-	// server.getConnections((_, connections) => {
-	// 	console.log({ connections });
-	// });
 });
