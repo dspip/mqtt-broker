@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains an example mqtt-broker that expects to receive information from **Hand_tracker**
+This repo contains an example mqtt-broker that expects to receive information from [Hand_tracker](https://github.com/dspip/Hand_detector)
 
 ## Prerequisites
 
