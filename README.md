@@ -24,5 +24,9 @@ The mqtt-broker receives the a `"fingers"` topic. messages are parsed as json, a
     "count": number,        // count of how many fingers are up.
     "fingers": boolean[5],  // a boolean array, true if finger is up, false if down,
                             // finger order is [thumb, index, middle, ring, pinky]
+    "handedness": {
+        "label": "Left" | "Right",
+        "score": number,
+    },
 }
 ```

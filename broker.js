@@ -7,7 +7,7 @@ server.listen(port, function () {
 	console.log("server started and listening on port ", port);
 });
 
-let client = mqtt.connect("mqtt://192.168.2.2");
+let client = mqtt.connect(`mqtt://localhost:${port}`);
 client.on("error", (err) => {
 	console.log(`failed to connect to self,\N[ERROR] ${err}`);
 });
